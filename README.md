@@ -43,7 +43,6 @@ Congratulations! You now have the whole repository on your computer and you can 
 
 > **Tip:** if you ever want to get the latest updates I've made, run `git pull` inside the repository folder.
 
-7. 
 ## Content
 This part is going to be updated as I develop more and more and as I upload my findings (and also flaws). It is sorted by weeks, it contains a brief summary of what is each mini-project about, what you can learn with it, the time it took ME, and a short review of myself.
 
