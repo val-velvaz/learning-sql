@@ -38,3 +38,12 @@ For this project, and the majority of them that I will be uploading, we we'll be
     * If it offers you the "Stack Builder", don't mark it, you don't need it
 3. The installer includes **pgAdmin**, a graphic interface we will be using for getting started.  
 ![Image of the pgadmin4 being serched on windows explorer](../../assets/pgadmin4.png)
+## Creating the Data base
+1. Open **pgAdmin** the the main menu. It will prompt you for the password you choose.
+2. In the right panel folow this steps:
+    1. Servers
+    2. PostgreSQL
+    3. Right click in *Databases*
+    4. Create
+    5. Database
+![Image of the pgadmin4 interface](../../assets/admin41.png)
