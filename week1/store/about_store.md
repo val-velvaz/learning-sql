@@ -31,7 +31,7 @@ This is a very simple mini-project that will help you to getting started with SQ
 ## Getting Started with Postgress
 For this project, and the majority of them that I will be uploading, we we'll be using PostgreSQL. Soooo if you don't have it installed yet, you may want to use this mini-tutorial to getting started.
 1. Go to https://www.postgresql.org/download/windows/ for downlanding PostgreSQL in the Windows operating system. Download it by clicking the button "Download the installer".
-![Image of the PostgreSQL page showcasing the option for downloading it](./assets/postgres.png)
+![Image of the PostgreSQL page showcasing the option for downloading it](../../assets/postgres.png)
 2. Execute it and leave everything by default.
     * When it ask for a password for the user `postgres`chose one and write it down.
     * In the port use the 5432
