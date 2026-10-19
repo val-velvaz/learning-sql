@@ -46,4 +46,5 @@ For this project, and the majority of them that I will be uploading, we we'll be
     3. Right click in *Databases*
     4. Create
     5. Database
+    
 ![Image of the pgadmin4 interface](../../assets/admin41.png)
