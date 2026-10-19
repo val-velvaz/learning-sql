@@ -31,13 +31,13 @@ This is a very simple mini-project that will help you to getting started with SQ
 ## Getting Started with Postgress
 For this project, and the majority of them that I will be uploading, we we'll be using PostgreSQL. Soooo if you don't have it installed yet, you may want to use this mini-tutorial to getting started.
 1. Go to https://www.postgresql.org/download/windows/ for downlanding PostgreSQL in the Windows operating system. Download it by clicking the button "Download the installer".
-![Image of the PostgreSQL page showcasing the option for downloading it](../../assets/postgres1.png)
+![Image of the PostgreSQL page showcasing the option for downloading it](../assets/postgres1.png)
 2. Execute it and leave everything by default.
     * When it ask for a password for the user `postgres`chose one and write it down.
     * In the port use the 5432
     * If it offers you the "Stack Builder", don't mark it, you don't need it
 3. The installer includes **pgAdmin**, a graphic interface we will be using for getting started.  
-![Image of the pgadmin4 being serched on windows explorer](../../assets/pgadmin4.png)
+![Image of the pgadmin4 being serched on windows explorer](../assets/pgadmin4.png)
 ## Creating the Data base
 1. Open **pgAdmin** the the main menu. It will prompt you for the password you choose.
 2. In the right panel folow this steps:
@@ -46,5 +46,5 @@ For this project, and the majority of them that I will be uploading, we we'll be
     3. Right click in *Databases*
     4. Create
     5. Database
-    
-![Image of the pgadmin4 interface](../../assets/admin41.png)
+
+![Image of the pgadmin4 interface](../assets/admin41.png)
