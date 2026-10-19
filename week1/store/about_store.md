@@ -22,3 +22,8 @@ This is a very simple mini-project that will help you to getting started with SQ
     <summary>What is a DataBase Management System (DBMS)?</summary>
     A database is usually controlled by a DBMS. It serves as an interface between the database and its end users or programs, allowing users to **retrieve**, **update**, and **manage** how the information is organized and optimized.
 </details>
+
+<details>
+    <summary>What is PostgreSQL</summary>
+    PostgreSQL is an open source database system. It is the one we will be usinng during this project! 
+</details>
