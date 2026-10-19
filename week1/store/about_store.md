@@ -37,3 +37,4 @@ For this project, and the majority of them that I will be uploading, we we'll be
     * In the port use the 5432
     * If it offers you the "Stack Builder", don't mark it, you don't need it
 3. The installer includes **pgAdmin**, a graphic interface we will be using for getting started.  
+![Image of the pgadmin4 being serched on windows explorer](../../assets/pgadmin4.png)
