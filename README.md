@@ -3,16 +3,16 @@ This is a project focused on developing the needed skills in order to become pro
 During this journy I'm going to be focusing merely in getting practice and actually get the necessary 
 knowledge so I can achieve my goals of being able to manage real Data Bases. 
 As this project is based almost solely on practice, I may not always include the theory, but if needed, I 
-would try to and also to explain it.
+would try to and also to explain it (❁´◡`❁).
 
-## How to use this repository
+## How to use this repository 
 This repository is aimed at full practice, therefore you should not expect to find full depth in here. I'm basing this on the Pareto Principle (80% practice and 20% theory), so although I'm not going to give full and complete explanaitions, I will try to give you enough theory so you can get started. I have found this method better because I tend to be a person who struggles with getting started, so when I discovered the Pareto Principle I felt that I could actually commit to something and getting started more easily.
 
 Another important thing to notice is that this repository is based on my own and very personal pacing, you may find things here that may be more difficult that I don't super explain or, on the other hand, you may come across "very easy stuff" that I found not so intuitive, and therefore I may have made so many different or repetitive exercices. 
 
-Although I'm trying to be the most self-explenatory, easy to understand, commited and careful with the things I am going to be developing here, you should have to take into account that the formatt of this project is to be MY journy as a whole. So in that way I've found useful to also preserve the flaws, errors and common mistakes I've made throughout my learning journy, so that the new learners don't make the same mistakes or in order for the experst to get the most of it understanding it and getting into how the newbies think. I find this last thing especially important if you are focusing towards education or if you have a role in which explainning to peers is an important part of your role.
+Although I'm trying to be the most self-explenatory, easy to understand, commited and careful with the things I am going to be developing here, you should have to take into account that the formatt of this project is to be MY journy as a whole ╮（╯＿╰）╭. So in that way I've found useful to also preserve the flaws, errors and common mistakes I've made throughout my learning journy, so that the new learners don't make the same mistakes or in order for the experst to get the most of it understanding it and getting into how the newbies think. I find this last thing especially important if you are focusing towards education or if you have a role in which explainning to peers is an important part of your role.
 
-### Is this your first time using a repository?
+### Is this your first time using a repository? ( ⓛ ω ⓛ *)
 In order to use this repository on your computer you have to be sure you have Git installed. If you're using Linux you shouldn't really worry about it, as most distributions come with Git preinstalled. But if you're working with another operating system such as Windows, you may have to install it. So take these steps to do so:
 
 1. Open your command prompt (cmd). You can do so by opening the Start menu and typing "cmd". Another way is to press `Windows + R` and type "cmd" as well.
