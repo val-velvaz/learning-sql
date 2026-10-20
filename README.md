@@ -5,6 +5,15 @@ knowledge so I can achieve my goals of being able to manage real Data Bases.
 As this project is based almost solely on practice, I may not always include the theory, but if needed, I 
 would try to and also to explain it (❁´◡`❁).
 
+### About this repository
+This repository documents my personal learning journey with SQL while
+taking the [Microsoft SQL Server Professional Certificate](https://www.coursera.org/professional-certificates/microsoft-sql-server) course on Coursera.
+
+All the notes, exercises and projects here are my own work. I do not
+share course materials, quiz questions or graded assignment solutions,
+in accordance with Coursera's Honor Code. If you are taking the course,
+I encourage you to solve the assignments on your own!
+
 ## How to use this repository 
 This repository is aimed at full practice, therefore you should not expect to find full depth in here. I'm basing this on the Pareto Principle (80% practice and 20% theory), so although I'm not going to give full and complete explanaitions, I will try to give you enough theory so you can get started. I have found this method better because I tend to be a person who struggles with getting started, so when I discovered the Pareto Principle I felt that I could actually commit to something and getting started more easily.
 
