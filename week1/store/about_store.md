@@ -46,5 +46,9 @@ For this project, and the majority of them that I will be uploading, we we'll be
     3. Right click in *Databases*
     4. Create
     5. Database
+    6. Name it "mini_store"
+    7. Save
 
 ![Image of the pgadmin4 interface](./assets/admin41.png)
+
+![Image of the user creating the mini_store database in pgadmin4](./assets/mini_store.png)
