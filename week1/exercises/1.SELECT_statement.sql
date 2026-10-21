@@ -6,3 +6,5 @@
 -- filters, sorting, or grouping
 
 SELECT * FROM Artist;
+SELECT * FROM ALBUM;
+SELECT * FROM Customer;
