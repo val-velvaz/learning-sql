@@ -1,54 +1,65 @@
-# How to Set Up and Connect to the Chinook Database Locally
+# Chinook Database Setup Guide for SQL Server in VS Code
 
-This guide explains how to install a local SQL Server instance, connect to it using Visual Studio Code, and initialize the Chinook sample database.
+This guide will walk you through the process of setting up the Chinook sample database locally using SQL Server and Visual Studio Code.
 
 ## Prerequisites
 
-* Visual Studio Code installed.
-* SQL Server (mssql) extension installed in VS Code.
-* 
-* The Chinook database source code cloned to your local machine.
+- **Visual Studio Code** installed.
+- **SQL Server (mssql) extension** installed in VS Code.
+- **SQL Server Express** (or any other SQL Server edition) installed on your local machine.
 
-## Step 1: Install SQL Server Express
+## Step 1: Clone the Repository
 
-If you don't have a SQL Server running locally or via Docker, you need to install the engine.
+1. Open your terminal in VS Code.
+2. Clone the repository containing the database scripts:
 
-Download SQL Server Express (free edition) from the official Microsoft website.
+   ```bash
+   git clone https://github.com/val-velvaz/chinook-database.git
+   ```
 
-Run the installer and choose the Basic installation type.
+3. Open the cloned folder in VS Code.
 
-Accept the terms and wait for the installation to finish.
+## Step 2: Connect to your Local SQL Server
 
-Once completed, note the Instance Name or Connection String provided on the final screen (usually localhost\SQLEXPRESS). You can safely close the window after this.
+1. Click on the **SQL Server** icon in the left activity bar of VS Code.
+2. In the **Connections** view, click the **+ Add Connection** icon.
+3. Fill in the connection details as follows:
+   - **Server name:** `localhost\SQLEXPRESS` (or your specific local server name).
+   - **Authentication type:** Select **Integrated** (Windows Authentication). This avoids needing a separate SQL username and password.
+   - **Trust server certificate:** Check this box (True).
+   - **Database name:** Leave it as `<default>` or blank (do **NOT** type "Chinook" yet, as it hasn't been created).
+   - **Profile Name:** Give it a recognizable name (e.g., "Local SQL Server").
+4. Press Enter to save and connect. You should see a green dot next to your new connection profile indicating it was successful.
 
-## Step 2: Connect to the Server in VS Code
+## Step 3: Create and Populate the Database
 
-Before creating the database, you must connect to the general server instance.
+1. Go back to the **Explorer** view in VS Code (the file icon on the top left).
+2. Navigate to `chinook-database` → `ChinookDatabase` → `DataSources`.
+3. Locate and open the file named **`Chinook_SqlServer.sql`**.
+4. Right-click anywhere inside the text editor and select **Execute Query** (or click the green Play button in the top right corner of the editor).
+5. Wait for the execution to finish. The "Query Results" pane at the bottom should display multiple lines saying `Commands completed successfully.`
 
-Open Visual Studio Code and go to the SQL Server tab on the left sidebar.
+## Troubleshooting (Common Issues)
 
-Click the + Add Connection icon.
+### ❌ Error: "Cannot open database 'Chinook' requested by the login"
 
-Server name: Enter localhost\SQLEXPRESS.
+**Cause:** This happens if you typed "Chinook" in the **Database name** field when setting up your connection profile, but the database hasn't been created yet.
 
-Authentication type: Select Integrated (or Windows Authentication). This uses your Windows account, so you won't need a specific SQL username or password.
+**Solution:**
 
-Database name: Leave this field blank (or select <Default>). Do not type "Chinook" yet, as the database does not exist.
+1. Edit your connection profile or create a new one.
+2. Change the **Database name** field back to `<default>` (or leave it empty).
+3. Connect to the server first, and then execute the `.sql` script. The script itself contains the command `CREATE DATABASE [Chinook];`, which will generate it for you.
 
-Trust server certificate: Check this box to allow local connections.
+### ❓ I ran the script, but I can't find the "Tables" folder!
 
-Click Connect. You should now see your server listed under the "Connections" panel with a green dot indicating a successful connection.
+**Cause:** The SQL Server view needs to be refreshed, or you might be looking in the file explorer instead of the database explorer.
 
-## Step 3: Create the Database
+**Solution:**
 
-Now that you are connected to the server, you can run the script to generate the database.
+1. Make sure you are in the **SQL Server extension panel** (the cylinder icon on the far left), not the standard file explorer.
+2. Hover over the **Databases** folder under your connection profile and click the circular **Refresh** icon (or right-click → Refresh).
+3. Expand the **Databases** folder. You should now see the `Chinook` database.
+4. Expand `Chinook`, and inside you will finally see the **Tables** folder containing `dbo.Album`, `dbo.Artist`, etc.
 
-In your VS Code file explorer, locate and open the Chinook_SqlServer.sql file from the cloned repository.
-
-With the file open, click the green Play (Run) button in the top right corner of the editor, or right-click anywhere inside the code and select Execute Query.
-
-Wait for the query to finish executing successfully.
-
-Go back to the SQL Server sidebar, expand your connection, and expand the Databases folder. You should now see the Chinook database listed with all its tables ready to use!
-
-Bonus Tip: If you cloned the Chinook repository inside your main project folder and want Git to ignore it so it doesn't get pushed to your GitHub, add the folder name to your .gitignore file (e.g., chinook-database/). If Git was already tracking it, run git rm -r --cached chinook-database/ in your terminal first.
+   *Note: Do not look inside "System Databases" like `master` or `tempdb`, as Chinook is a user database and sits outside of that folder.*
