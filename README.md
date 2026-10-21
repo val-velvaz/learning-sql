@@ -55,6 +55,8 @@ Congratulations! You now have the whole repository on your computer and you can 
 ## Content
 This part is going to be updated as I develop more and more and as I upload my findings (and also flaws). It is sorted by weeks, it contains a brief summary of what is each mini-project about, what you can learn with it, the time it took ME, and a short review of myself.
 
+> **Important:** Thoughout this course we are going to be using the Chinook Database (https://github.com/lerocha/chinook-database)
+
 #### Week 1
 1. Store - *PENDING*
 
