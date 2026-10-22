@@ -7,3 +7,5 @@ SELECT AlbumId FROM Album;
 SELECT Title FROM Album;
 -- retrieves the artist Id of an album
 SELECT ArtistId FROM Album;
+
+SELECT Name FROM Artist;
