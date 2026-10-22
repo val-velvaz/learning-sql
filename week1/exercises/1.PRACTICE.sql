@@ -57,7 +57,7 @@ FROM Genre;
 -- Get the next first 10 track genres sorted alphabetically except
 -- begining from the first 3
 
-SELECT DISTINCT TOP 10 Name 
+SELECT DISTINCT Name 
 FROM Genre 
 ORDER BY Name ASC 
 OFFSET 3 ROWS Fetch NEXT 10 ROWS 
