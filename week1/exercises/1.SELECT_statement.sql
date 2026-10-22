@@ -5,6 +5,7 @@
 -- and rows you want to fetch, optionally applying 
 -- filters, sorting, or grouping
 
+-- This code will retrieve the tables of...
 SELECT * FROM Artist;
 SELECT * FROM ALBUM;
 SELECT * FROM Customer;
