@@ -36,8 +36,23 @@ JOIN MediaType ON Track.MediaTypeId = MediaType.MediaTypeId;
 */
 
 -- PRACTICING LEFT JOINS
+/*
 SELECT 
     Artist.Name,
     Album.Title 
 FROM Album 
 LEFT JOIN Artist ON Album.ArtistId = Artist.ArtistId;
+*/
+
+-- obtain the Employeers that can assist a customer based 
+-- if the customer is on the same country as the employeer
+
+
+SELECT 
+    Employee.Country,
+    Employee.FirstName,
+    Employee.LastName,
+    Customer.Country,    Customer.FirstName,
+    Customer.LastName
+FROM Employee
+LEFT JOIN Customer ON Employee.Country = Customer.Country; 
