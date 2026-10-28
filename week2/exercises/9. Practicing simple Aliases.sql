@@ -10,9 +10,16 @@ GROUP BY CustomerId;
 */
 
 -- Retrieve the invoice IDs from each customer 
+/*
 SELECT 
     c.CustomerId, 
     c.LastName, 
     i.InvoiceId 
 FROM Customer c
 JOIN Invoice i ON c.State = i.BillingState;
+*/
+
+-- Retrieve all the artist names and their albums
+SELECT a.Name, al.Title 
+FROM Artist a    
+JOIN Album al ON a.ArtistId = al.ArtistId;
