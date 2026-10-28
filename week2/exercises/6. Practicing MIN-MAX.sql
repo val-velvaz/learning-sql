@@ -10,3 +10,4 @@ ORDER BY HireDate ASC;
 
 -- get the customer with the higher total invoice
 -- PENDING
+

@@ -35,11 +35,11 @@ ORDER BY TrackNum DESC;
 */
 
 -- For each GenreId in Track, show the minimum price, maximum and its average
-
+/*
 SELECT Track.GenreId, 
     MIN(Track.UnitPrice) AS MinPrice,
     MAX(Track.UnitPrice) AS MaxPrice,
     ROUND(AVG(Track.UnitPrice), 2) AS AvgPrice
 FROM Track 
 GROUP BY GenreId;
-    
+*/
