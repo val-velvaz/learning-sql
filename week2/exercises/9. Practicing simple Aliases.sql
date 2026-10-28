@@ -20,6 +20,6 @@ JOIN Invoice i ON c.State = i.BillingState;
 */
 
 -- Retrieve all the artist names and their albums
-SELECT a.Name, al.Title 
+SELECT a.Name AS 'Artist Name', al.Title AS 'Album Title' 
 FROM Artist a    
 JOIN Album al ON a.ArtistId = al.ArtistId;
