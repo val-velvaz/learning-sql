@@ -58,6 +58,26 @@ This part is going to be updated as I develop more and more and as I upload my f
 > **Important:** Thoughout this course we are going to be using the Chinook Database (https://github.com/lerocha/chinook-database). You can find a guide in how to set it up on the root of this repository, the file it is named "chinook_database_setup_guide.md"
 
 #### Week 1
-1. Store - *PENDING*
+1. Store - *Environment setup DONE, exercises PENDING*
+   - Mini-project walkthrough for installing PostgreSQL and pgAdmin, and creating the `mini_store` database.
+2. Core SQL fundamentals - *DONE*
+   - `SELECT`, selecting single and multiple columns
+   - `WHERE` and the `LIKE` operator
+   - `ORDER BY`, `DISTINCT`, `TOP N`, `OFFSET`
+   - Basic `JOIN`s
+   - String functions: `UPPER`/`LOWER`, `CONCAT`, `SUBSTRING`
+   - `ROUND`, `SUM`
+   - Theory notes: intro to databases, the `SELECT` statement, the `WHERE` statement, the `LIKE` operator, `JOIN`s, the importance of data organization, sorting with `ORDER BY`, data transformation
 
- 
+#### Week 2
+1. Aggregate functions and dates - *DONE*
+   - `AVG`, `COUNT`, `MIN`/`MAX`
+   - `FORMAT`, `GETDATE`, `DATEDIFF`
+   - More functions for data transformation
+   - `GROUP BY`: which non-aggregated columns must appear in it, and why
+2. Table Aliases - *DONE*
+   - Short table aliases (e.g. `c`, `i`, `e`) to simplify joins and avoid repeating full table names
+   - Why a value in single quotes (`'CustomerFullName'`) is a literal string, not a reference to a column or alias
+   - Verifying a foreign key relationship with `sp_help` instead of assuming it shares the primary key's name (e.g. `Customer.SupportRepId` → `Employee.EmployeeId`)
+   - Disambiguating columns with the same name across joined tables (`Customer.FirstName`/`LastName` vs `Employee.FirstName`/`LastName`)
+   - *Theory note for this topic still pending*
