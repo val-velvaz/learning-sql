@@ -29,6 +29,7 @@ ORDER BY TotalSpent DESC;
 -- Group the results by the Artist's name to aggregate the count of Rock tracks.
 -- Order the results by the count of Rock tracks in descending order to see the artists with the most Rock tracks first.
 
+/*
 SELECT 
     ar.Name AS ArtistName,
     COUNT(t.TrackId) AS TrackNum
@@ -39,3 +40,21 @@ JOIN Genre g ON t.GenreId = g.GenreId
 WHERE g.Name = 'Rock'
 GROUP BY ar.Name
 ORDER BY TrackNum DESC;
+*/
+
+-- This query retrieves the top 10 albums by sales, ordered by the total sales in descending order.
+
+-- In the select statement, get the top 10 Album titles and the total sales for each album.
+-- Join the InvoiceLine table to get the sales information for each track in the album.
+-- Join the Invoice table to ensure we are only considering invoices that have been paid.
+-- Group the results by the Album title to aggregate the total sales for each album.
+-- Order the results by AlbumSales in descending order to see the albums with the highest sales first.
+
+SELECT 
+    TOP 10 Album.Title AS BestSellerAlbum,
+    SUM(InvoiceLine.UnitPrice) AS Earnings
+FROM Album
+JOIN Track ON Album.AlbumId = Track.AlbumId
+JOIN InvoiceLine ON InvoiceLine.TrackId = Track.TrackId
+GROUP BY Album.Title
+ORDER BY Earnings DESC;
