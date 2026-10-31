@@ -52,7 +52,7 @@ ORDER BY TrackNum DESC;
 
 SELECT 
     TOP 10 Album.Title AS BestSellerAlbum,
-    SUM(InvoiceLine.UnitPrice) AS Earnings
+    SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS Earnings
 FROM Album
 JOIN Track ON Album.AlbumId = Track.AlbumId
 JOIN InvoiceLine ON InvoiceLine.TrackId = Track.TrackId
