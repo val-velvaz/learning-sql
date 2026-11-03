@@ -11,7 +11,7 @@
 -- 3. Use a JOIN clause to combine data from the 'Invoice' table and the 'InvoiceLine' table.
 -- 4. Join with the 'InvoiceLine' table to get detailed information about each invoice's line items.
 
-CREATE VIEW View_InvoiceDetails AS 
+CREATE OR ALTER VIEW View_InvoiceDetails AS 
 SELECT 
     i.InvoiceId, 
     i.InvoiceDate,
@@ -21,4 +21,4 @@ SELECT
     il.Quantity,
     il.UnitPrice * il.Quantity AS InvoiceLineTotal 
 FROM Invoice i  
-JOIN InvoiceLine il ON i.InvoiceId = il.InvoiceLineId;
+JOIN InvoiceLine il ON i.InvoiceId = il.InvoiceId;
