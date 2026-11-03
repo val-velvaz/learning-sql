@@ -9,7 +9,7 @@
 -- 4. Group the results by the customer's first and last name to aggregate the data for each customer.
 
 CREATE VIEW View_CustomerInvoices AS 
-    SELECT 
+SELECT 
     c.FirstName,
     c.LastName,
     COUNT(i.InvoiceId) AS InvoiceNum, 
