@@ -8,7 +8,7 @@
 -- 3. Use a JOIN clause to combine data from the 'Customer' table and the 'Invoice' table.
 -- 4. Group the results by the customer's first and last name to aggregate the data for each customer.
 
-CREATE VIEW View_CustomerInvoices AS 
+CREATE OR ALTER VIEW View_CustomerInvoices AS 
 SELECT 
     c.FirstName,
     c.LastName,
