@@ -7,7 +7,7 @@ would try to and also to explain it (❁´◡`❁).
 
 ### About this repository
 This repository documents my personal learning journey with SQL while.
-taking the [Microsoft SQL Server Professional Certificate](https://www.coursera.org/professional-certificates/microsoft-sql-server) course on Coursera.
+taking the [Microsoft SQL Server Professional Certificate](https://www.coursera.org/professional-certificates/microsoft-sql-server) course on coursera.
 
 All the notes, exercises and projects here are my own work. I do not
 share course materials, quiz questions or graded assignment solutions,
