@@ -8,6 +8,7 @@
 -- 3. Use a JOIN clause to combine data from the 'Customer' table and the 'Invoice' table.
 -- 4. Exclude rows where the company name is NULL.
 -- 5. Group the results by the company name to aggregate the data for each company.
+/*
 ALTER VIEW View_CustomerInvoices AS 
 SELECT 
     c.Company AS CustomerCompany,
@@ -17,3 +18,10 @@ FROM Customer c
 JOIN Invoice i ON c.CustomerId = i.CustomerId 
 WHERE c.Company IS NOT NULL 
 GROUP BY c.Company;
+*/
+
+-- Create a select statement on the view and order the data by TotalAmountSpent in descending order.
+
+
+SELECT * FROM View_CustomerInvoices
+ORDER BY TotalSpent DESC;
