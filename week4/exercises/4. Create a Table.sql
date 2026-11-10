@@ -15,16 +15,18 @@ CREATE TABLE sessions (
     session_date DATE
 );
 
-
 GO
 /*
 The first speaker will be by Maya Chen who is giving a talk on
 “Intro to Data Visualization” on May 1, 2026.
 */
-INSERT  INTO sessions (
-    id,
-    title,
-    speaker,
-    session_date
-)
-VALUES                (1, 'Intro to Data Visualization', 'Maya Chen', '2026-05-1');
+
+
+INSERT INTO sessions (id, title, speaker, session_date)
+    VALUES (
+        1,
+        'Intro to Data Visualization',
+        'Maya Chen',
+        '2026-05-1'
+    );
+
